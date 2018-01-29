@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>modern-tag-demo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Fetchservlet</display-name>
+    <servlet-name>Fetchservlet</servlet-name>
+    <servlet-class>com.web.app.Fetchservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Fetchservlet</servlet-name>
+    <url-pattern>/fetch</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestTableTag</display-name>
+    <servlet-name>TestTableTag</servlet-name>
+    <servlet-class>com.app.tag.TestTableTag</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestTableTag</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+</web-app>
